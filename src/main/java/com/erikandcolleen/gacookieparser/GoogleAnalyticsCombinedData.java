@@ -27,7 +27,7 @@ package com.erikandcolleen.gacookieparser;
 import java.util.Date;
 
 /**
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GoogleAnalyticsCombinedData {
 	private final String domain;

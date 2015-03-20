@@ -34,7 +34,7 @@ import java.util.List;
 import static com.erikandcolleen.gacookieparser.GADataBase.getCookieData;
 
 /**
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GADataServletParser {
 	public static GACustomValueData getCustomValueData(HttpServletRequest request) {

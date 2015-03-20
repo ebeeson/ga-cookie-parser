@@ -29,7 +29,7 @@ package com.erikandcolleen.gacookieparser;
  *
  * This cookie is no longer used by the ga.js tracking code to determine session status.
  *
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GASessionEndData extends GADataBase {
 	public static final String COOKIE_NAME = "__utmc";

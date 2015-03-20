@@ -25,7 +25,7 @@
 package com.erikandcolleen.gacookieparser;
 
 /**
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GoogleAnalyticsData {
 	private final GAVisitorData visitor;

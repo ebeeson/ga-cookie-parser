@@ -38,7 +38,7 @@ import java.util.Map;
  * ad campaigns and page navigation within your own site. The cookie is updated with
  * each page view to your site.
  *
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GATrafficSourcesData extends GADataBase {
 	public static final String COOKIE_NAME = "__utmz";

@@ -31,7 +31,7 @@ import javax.servlet.http.HttpServletRequest;
 import static com.erikandcolleen.gacookieparser.servlet.GADataServletParser.getGoogleAnalyticsCookieData;
 
 /**
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GoogleAnalyticsCombinedServletData extends GoogleAnalyticsCombinedData {
 	public GoogleAnalyticsCombinedServletData(HttpServletRequest request) {

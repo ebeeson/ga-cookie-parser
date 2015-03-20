@@ -38,7 +38,7 @@ import java.util.Date;
  * cookie expires when a user pauses on a page on your site for longer than 30 minutes.
  * You can modify the default length of a user session with the _setSessionCookieTimeout() method.
  *
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GASessionData extends GADataBase {
 	public static final String COOKIE_NAME = "__utmb";

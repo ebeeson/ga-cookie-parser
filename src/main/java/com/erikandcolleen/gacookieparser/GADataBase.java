@@ -28,7 +28,7 @@ import java.util.Date;
 import java.util.regex.Pattern;
 
 /**
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public abstract class GADataBase {
 	private static final Pattern PATTERN_DOT = Pattern.compile("\\.");

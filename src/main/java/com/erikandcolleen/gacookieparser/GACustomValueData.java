@@ -33,7 +33,7 @@ package com.erikandcolleen.gacookieparser;
  * in the GIF request URL via the utmcc parameter. This cookie is only written if you have
  * added the _setVar() method for the tracking code on your website page.
  *
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GACustomValueData extends GADataBase {
 	public static final String COOKIE_NAME = "__utmv";

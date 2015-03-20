@@ -36,7 +36,7 @@ import java.util.Date;
  * this cookie is provided with a unique ID that Google Analytics uses to ensure both the validity and
  * accessibility of the cookie as an extra security measure.
  *
- * @author Erik Beeson
+ * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
 public class GAVisitorData extends GADataBase {
 	public static final String COOKIE_NAME = "__utma";
