@@ -152,4 +152,20 @@ public class GoogleAnalyticsCombinedData {
 	public String getCustomVariableValue() {
 		return customVariableValue;
 	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GoogleAnalyticsCombinedData{");
+		sb.append("domain='").append(domain).append('\'');
+		sb.append(", pageViews=").append(pageViews);
+		sb.append(", sessionCount=").append(sessionCount);
+		sb.append(", campaignNumber=").append(campaignNumber);
+		sb.append(", campaignData=").append(campaignData);
+		sb.append(", uid='").append(uid).append('\'');
+		sb.append(", firstSessionStart=").append(firstSessionStart);
+		sb.append(", previousSessionStart=").append(previousSessionStart);
+		sb.append(", currentSessionStart=").append(currentSessionStart);
+		sb.append(", customVariableValue='").append(customVariableValue).append('\'');
+		sb.append('}');
+		return sb.toString();
+	}
 }

@@ -37,4 +37,11 @@ public class GASessionEndData extends GADataBase {
 	public GASessionEndData(String value) {
 		super(value);
 	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GASessionEndData{");
+		sb.append("domain='").append(getDomain()).append('\'');
+		sb.append('}');
+		return sb.toString();
+	}
 }

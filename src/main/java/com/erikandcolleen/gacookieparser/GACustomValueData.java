@@ -51,4 +51,12 @@ public class GACustomValueData extends GADataBase {
 	public String getValue() {
 		return value;
 	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GACustomValueData{");
+		sb.append("domain='").append(getDomain()).append('\'');
+		sb.append(", value='").append(value).append('\'');
+		sb.append('}');
+		return sb.toString();
+	}
 }

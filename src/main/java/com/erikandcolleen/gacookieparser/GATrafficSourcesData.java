@@ -128,5 +128,28 @@ public class GATrafficSourcesData extends GADataBase {
 		public Map<String, String> getAdditionalData() {
 			return additionalData;
 		}
+
+		public String toString() {
+			final StringBuilder sb = new StringBuilder("CampaignData{");
+			sb.append("source='").append(source).append('\'');
+			sb.append(", name='").append(name).append('\'');
+			sb.append(", medium='").append(medium).append('\'');
+			sb.append(", term='").append(term).append('\'');
+			sb.append(", content='").append(content).append('\'');
+			sb.append(", additionalData=").append(additionalData);
+			sb.append('}');
+			return sb.toString();
+		}
+	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GATrafficSourcesData{");
+		sb.append("domain='").append(getDomain()).append('\'');
+		sb.append(", currentSessionStart=").append(currentSessionStart);
+		sb.append(", sessionCount=").append(sessionCount);
+		sb.append(", campaignNumber=").append(campaignNumber);
+		sb.append(", campaignData=").append(campaignData);
+		sb.append('}');
+		return sb.toString();
 	}
 }

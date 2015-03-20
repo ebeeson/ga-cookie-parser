@@ -90,4 +90,16 @@ public class GAVisitorData extends GADataBase {
 	public Integer getSessionCount() {
 		return sessionCount;
 	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GAVisitorData{");
+		sb.append("domain='").append(getDomain()).append('\'');
+		sb.append(", uid='").append(uid).append('\'');
+		sb.append(", firstSessionStart=").append(firstSessionStart);
+		sb.append(", previousSessionStart=").append(previousSessionStart);
+		sb.append(", currentSessionStart=").append(currentSessionStart);
+		sb.append(", sessionCount=").append(sessionCount);
+		sb.append('}');
+		return sb.toString();
+	}
 }

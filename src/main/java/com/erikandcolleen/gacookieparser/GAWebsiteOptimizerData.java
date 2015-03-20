@@ -41,4 +41,11 @@ public class GAWebsiteOptimizerData extends GADataBase {
 	public GAWebsiteOptimizerData(String value) {
 		super(value);
 	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GAWebsiteOptimizerData{");
+		sb.append("domain='").append(getDomain()).append('\'');
+		sb.append('}');
+		return sb.toString();
+	}
 }

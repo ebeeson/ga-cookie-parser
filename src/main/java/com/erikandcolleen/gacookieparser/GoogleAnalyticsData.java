@@ -35,7 +35,9 @@ public class GoogleAnalyticsData {
 	private final GAWebsiteOptimizerData websiteOptimizer;
 	private final GATrafficSourcesData trafficSources;
 
-	public GoogleAnalyticsData(GAVisitorData visitor, GASessionData session, GASessionEndData sessionEnd, GACustomValueData customValue, GAWebsiteOptimizerData websiteOptimizer, GATrafficSourcesData trafficSources) {
+	public GoogleAnalyticsData(GAVisitorData visitor, GASessionData session, GASessionEndData sessionEnd,
+							   GACustomValueData customValue, GAWebsiteOptimizerData websiteOptimizer,
+							   GATrafficSourcesData trafficSources) {
 		this.visitor = visitor;
 		this.session = session;
 		this.sessionEnd = sessionEnd;
@@ -66,5 +68,17 @@ public class GoogleAnalyticsData {
 
 	public GATrafficSourcesData getTrafficSources() {
 		return trafficSources;
+	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GoogleAnalyticsData{");
+		sb.append("visitor=").append(visitor);
+		sb.append(", session=").append(session);
+		sb.append(", sessionEnd=").append(sessionEnd);
+		sb.append(", customValue=").append(customValue);
+		sb.append(", websiteOptimizer=").append(websiteOptimizer);
+		sb.append(", trafficSources=").append(trafficSources);
+		sb.append('}');
+		return sb.toString();
 	}
 }

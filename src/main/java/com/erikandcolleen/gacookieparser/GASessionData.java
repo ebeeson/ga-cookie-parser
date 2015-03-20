@@ -60,4 +60,13 @@ public class GASessionData extends GADataBase {
 	public Date getCurrentSessionStart() {
 		return currentSessionStart;
 	}
+
+	public String toString() {
+		final StringBuilder sb = new StringBuilder("GASessionData{");
+		sb.append("domain='").append(getDomain()).append('\'');
+		sb.append(", pageViews=").append(pageViews);
+		sb.append(", currentSessionStart=").append(currentSessionStart);
+		sb.append('}');
+		return sb.toString();
+	}
 }
