@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GA Cookie Parser">
+	<listeners>
+		<listener class-name="com.erikandcolleen.InvocationLoggingListener"/>
+	</listeners>
+
+	<test name="Examples">
+		<classes>
+			<class name="com.erikandcolleen.gacookieparser.GoogleAnalyticsExamplesTest"/>
+		</classes>
+	</test>
+</suite>
