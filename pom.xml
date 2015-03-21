@@ -7,7 +7,7 @@
 
 	<groupId>com.erikandcolleen</groupId>
 	<artifactId>ga-cookie-parser</artifactId>
-	<version>0.3</version>
+	<version>1.0.0</version>
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Parse Google Analytics cookies with Java</description>
