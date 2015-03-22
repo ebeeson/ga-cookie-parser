@@ -5,7 +5,7 @@
 
 	<groupId>com.erikandcolleen</groupId>
 	<artifactId>ga-cookie-parser</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>Parse Google Analytics cookies with Java</description>
@@ -30,7 +30,7 @@
 		<connection>scm:git:git@github.com:ebeeson/ga-cookie-parser.git</connection>
 		<developerConnection>scm:git:git@github.com:ebeeson/ga-cookie-parser.git</developerConnection>
 		<url>git@github.com:ebeeson/ga-cookie-parser.git</url>
-	  <tag>v1.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<properties>
