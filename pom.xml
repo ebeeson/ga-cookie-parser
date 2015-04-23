@@ -30,8 +30,8 @@
 		<connection>scm:git:git@github.com:ebeeson/ga-cookie-parser.git</connection>
 		<developerConnection>scm:git:git@github.com:ebeeson/ga-cookie-parser.git</developerConnection>
 		<url>git@github.com:ebeeson/ga-cookie-parser.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,6 +50,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.8.21</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
