@@ -43,7 +43,8 @@ public class GAWebsiteOptimizerData extends GADataBase {
 	}
 
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("GAWebsiteOptimizerData{");
+		final StringBuilder sb = new StringBuilder("GAWebsiteOptimizerData");
+		sb.append('(').append(COOKIE_NAME).append("){");
 		sb.append("domain='").append(getDomain()).append('\'');
 		sb.append('}');
 		return sb.toString();

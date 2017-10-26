@@ -53,7 +53,8 @@ public class GACustomValueData extends GADataBase {
 	}
 
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("GACustomValueData{");
+		final StringBuilder sb = new StringBuilder("GACustomValueData");
+		sb.append('(').append(COOKIE_NAME).append("){");
 		sb.append("domain='").append(getDomain()).append('\'');
 		sb.append(", value='").append(value).append('\'');
 		sb.append('}');

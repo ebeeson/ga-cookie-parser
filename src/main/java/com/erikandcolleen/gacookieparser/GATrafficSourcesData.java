@@ -143,7 +143,8 @@ public class GATrafficSourcesData extends GADataBase {
 	}
 
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("GATrafficSourcesData{");
+		final StringBuilder sb = new StringBuilder("GATrafficSourcesData");
+		sb.append('(').append(COOKIE_NAME).append("){");
 		sb.append("domain='").append(getDomain()).append('\'');
 		sb.append(", currentSessionStart=").append(currentSessionStart);
 		sb.append(", sessionCount=").append(sessionCount);

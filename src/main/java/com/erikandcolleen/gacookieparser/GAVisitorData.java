@@ -92,7 +92,8 @@ public class GAVisitorData extends GADataBase {
 	}
 
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("GAVisitorData{");
+		final StringBuilder sb = new StringBuilder("GAVisitorData");
+		sb.append('(').append(COOKIE_NAME).append("){");
 		sb.append("domain='").append(getDomain()).append('\'');
 		sb.append(", uid='").append(uid).append('\'');
 		sb.append(", firstSessionStart=").append(firstSessionStart);
