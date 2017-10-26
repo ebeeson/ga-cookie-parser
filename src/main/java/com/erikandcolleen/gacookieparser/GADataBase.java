@@ -36,22 +36,22 @@ public abstract class GADataBase {
 
 	private final String domain;
 
-	protected GADataBase(String value, int limit) {
-		this.parts = (value == null ? new String[0] : PATTERN_DOT.split(value.trim(), limit));
+	protected GADataBase(String cookieValue, int limit) {
+		this.parts = (cookieValue == null ? new String[0] : PATTERN_DOT.split(cookieValue.trim(), limit));
 		this.domain = getString(0);
 	}
 
-	protected GADataBase(String value) {
-		this.parts = (value == null ? new String[0] : PATTERN_DOT.split(value.trim()));
+	protected GADataBase(String cookieValue) {
+		this.parts = (cookieValue == null ? new String[0] : PATTERN_DOT.split(cookieValue.trim()));
 		this.domain = getString(0);
 	}
 
-	protected String getString(int i) {
-		return i < parts.length ? parts[i] : null;
+	protected String getString(int field) {
+		return field < parts.length ? parts[field] : null;
 	}
 
-	protected Long getLong(int i) {
-		String value = getString(i);
+	protected Long getLong(int field) {
+		String value = getString(field);
 		try {
 			return value != null ? Long.parseLong(value, 10) : null;
 		} catch(NumberFormatException e) {
@@ -59,8 +59,8 @@ public abstract class GADataBase {
 		}
 	}
 
-	protected Integer getInteger(int i) {
-		String value = getString(i);
+	protected Integer getInteger(int field) {
+		String value = getString(field);
 		try {
 			return value != null ? Integer.parseInt(value, 10) : null;
 		} catch(NumberFormatException e) {
@@ -68,8 +68,8 @@ public abstract class GADataBase {
 		}
 	}
 
-	protected Date getDate(int i) {
-		Long value = getLong(i);
+	protected Date getDate(int field) {
+		Long value = getLong(field);
 		return value != null ? new Date(1000 * value) : null;
 	}
 

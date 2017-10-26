@@ -40,8 +40,8 @@ public class GACustomValueData extends GADataBase {
 
 	private final String value;
 
-	public GACustomValueData(String value) {
-		super(value);
+	public GACustomValueData(String cookieValue) {
+		super(cookieValue);
 		this.value = getString(1);
 	}
 

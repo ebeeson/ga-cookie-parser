@@ -46,8 +46,8 @@ public class GASessionData extends GADataBase {
 	private final Integer pageViews;
 	private final Date currentSessionStart;
 
-	public GASessionData(String value) {
-		super(value);
+	public GASessionData(String cookieValue) {
+		super(cookieValue);
 		this.pageViews = getInteger(1);
 		//getInteger(2) // outbound link countdown, https://groups.google.com/forum/?fromgroups=#!topic/analytics-help-basics/YhHkR9AJuGM
 		this.currentSessionStart = getDate(3);

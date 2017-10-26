@@ -38,8 +38,8 @@ package com.erikandcolleen.gacookieparser;
 public class GAWebsiteOptimizerData extends GADataBase {
 	public static final String COOKIE_NAME = "__utmx";
 
-	public GAWebsiteOptimizerData(String value) {
-		super(value);
+	public GAWebsiteOptimizerData(String cookieValue) {
+		super(cookieValue);
 	}
 
 	public String toString() {

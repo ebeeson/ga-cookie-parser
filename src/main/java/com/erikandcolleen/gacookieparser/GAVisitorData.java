@@ -47,8 +47,8 @@ public class GAVisitorData extends GADataBase {
 	private final Date currentSessionStart;
 	private final Integer sessionCount;
 
-	public GAVisitorData(String value) {
-		super(value);
+	public GAVisitorData(String cookieValue) {
+		super(cookieValue);
 		this.uid = getString(1);
 		this.firstSessionStart = getDate(2);
 		this.previousSessionStart = getDate(3);
