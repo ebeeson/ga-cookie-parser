@@ -23,9 +23,15 @@
  */
 
 /**
+ * Most of the javadoc comments in this package have been assembled from the following resources:
+ *
  * https://developers.google.com/analytics/resources/concepts/gaConceptsCookies
  * http://www.tutkiun.com/2011/04/a-google-analytics-cookie-explained.html
  * http://home.wangjianshuo.com/archives/20090502_google_analytics_cookie_by_this_site.htm
  * http://blog.vkistudios.com/index.cfm/2010/8/31/GA-Basics-The-Structure-of-Cookie-Values
+ * http://springest.io/anatomy-of-google-analytics-cookies
+ * http://www.webtrafficexchange.com/google-analytics-cookies-utma-utmb-utmz
+ * http://www.morevisibility.com/blogs/analytics/from-__utma-to-__utmz-google-analytics-cookies.html
+ * https://groups.google.com/forum/?fromgroups=#!topic/analytics-help-basics/YhHkR9AJuGM
  */
 package com.erikandcolleen.gacookieparser;

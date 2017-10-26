@@ -49,7 +49,20 @@ public class GASessionData extends GADataBase {
 	public GASessionData(String cookieValue) {
 		super(cookieValue);
 		this.pageViews = getInteger(1);
-		//getInteger(2) // outbound link countdown, https://groups.google.com/forum/?fromgroups=#!topic/analytics-help-basics/YhHkR9AJuGM
+		/**
+		 * Field 2 is "outbound link countdown"
+		 *
+		 * This starts at 10 on every site. Each time you click on an outgoing
+		 * link it will count down until it reaches 0. It’s part of an outgoing
+		 * links tracking system in the ga.js that never appeared in the GA
+		 * interface (thanks André Scholten for pointing this out).
+		 *
+		 * We don't bother with it since nobody seems to care about it anymore.
+		 *
+		 * @see http://springest.io/anatomy-of-google-analytics-cookies
+		 * @see http://andrescholten.net/
+		 */
+		//this.outboundLinkCountdown = getInteger(2);
 		this.currentSessionStart = getDate(3);
 	}
 
