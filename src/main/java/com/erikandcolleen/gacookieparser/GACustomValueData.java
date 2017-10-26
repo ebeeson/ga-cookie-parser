@@ -35,7 +35,7 @@ package com.erikandcolleen.gacookieparser;
  *
  * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
-public class GACustomValueData extends GADataBase {
+public class GACustomValueData extends GACookieData {
 	public static final String COOKIE_NAME = "__utmv";
 
 	private final String value;

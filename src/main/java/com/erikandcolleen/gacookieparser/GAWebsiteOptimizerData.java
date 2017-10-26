@@ -35,7 +35,7 @@ package com.erikandcolleen.gacookieparser;
  * @see <a href="http://www.google.com/support/websiteoptimizer/">Website Optimizer Help Center</a>
  * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
-public class GAWebsiteOptimizerData extends GADataBase {
+public class GAWebsiteOptimizerData extends GACookieData {
 	public static final String COOKIE_NAME = "__utmx";
 
 	public GAWebsiteOptimizerData(String cookieValue) {

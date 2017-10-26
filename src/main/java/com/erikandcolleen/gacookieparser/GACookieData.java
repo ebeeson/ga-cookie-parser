@@ -30,18 +30,18 @@ import java.util.regex.Pattern;
 /**
  * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
-public abstract class GADataBase {
+public abstract class GACookieData {
 	private static final Pattern PATTERN_DOT = Pattern.compile("\\.");
 	private final transient String[] parts;
 
 	private final String domain;
 
-	protected GADataBase(String cookieValue, int limit) {
+	protected GACookieData(String cookieValue, int limit) {
 		this.parts = (cookieValue == null ? new String[0] : PATTERN_DOT.split(cookieValue.trim(), limit));
 		this.domain = getString(0);
 	}
 
-	protected GADataBase(String cookieValue) {
+	protected GACookieData(String cookieValue) {
 		this.parts = (cookieValue == null ? new String[0] : PATTERN_DOT.split(cookieValue.trim()));
 		this.domain = getString(0);
 	}
@@ -80,7 +80,7 @@ public abstract class GADataBase {
 		return domain;
 	}
 
-	public static GADataBase getCookieData(String cookieName, String cookieValue) {
+	public static GACookieData getCookieData(String cookieName, String cookieValue) {
 		if(cookieName != null && cookieValue != null) {
 			if(GAVisitorData.COOKIE_NAME.equals(cookieName)) {
 				return new GAVisitorData(cookieValue);

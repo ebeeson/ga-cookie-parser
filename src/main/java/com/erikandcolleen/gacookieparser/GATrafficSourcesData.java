@@ -40,7 +40,7 @@ import java.util.Map;
  *
  * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
-public class GATrafficSourcesData extends GADataBase {
+public class GATrafficSourcesData extends GACookieData {
 	public static final String COOKIE_NAME = "__utmz";
 
 	private final Date currentSessionStart;

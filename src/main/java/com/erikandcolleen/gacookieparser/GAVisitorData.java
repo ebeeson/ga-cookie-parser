@@ -38,7 +38,7 @@ import java.util.Date;
  *
  * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
-public class GAVisitorData extends GADataBase {
+public class GAVisitorData extends GACookieData {
 	public static final String COOKIE_NAME = "__utma";
 
 	private final String uid;

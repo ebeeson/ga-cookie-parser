@@ -31,7 +31,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.erikandcolleen.gacookieparser.GADataBase.getCookieData;
+import static com.erikandcolleen.gacookieparser.GACookieData.getCookieData;
 
 /**
  * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
@@ -61,27 +61,27 @@ public class GADataServletParser {
 		return (GAWebsiteOptimizerData) getGoogleAnalyticsCookieData(request, GAWebsiteOptimizerData.COOKIE_NAME);
 	}
 
-	public static GADataBase[] getGoogleAnalyticsCookieData(HttpServletRequest request) {
-		List<GADataBase> list = new ArrayList<GADataBase>();
+	public static GACookieData[] getGoogleAnalyticsCookieData(HttpServletRequest request) {
+		List<GACookieData> list = new ArrayList<GACookieData>();
 		if(request != null) {
 			Cookie[] cookies = request.getCookies();
 			if(cookies != null) {
 				for(Cookie cookie : cookies) {
-					GADataBase data = getGoogleAnalyticsCookieData(cookie);
+					GACookieData data = getGoogleAnalyticsCookieData(cookie);
 					if(data != null) {
 						list.add(data);
 					}
 				}
 			}
 		}
-		return list.toArray(new GADataBase[list.size()]);
+		return list.toArray(new GACookieData[list.size()]);
 	}
 
-	public static GADataBase getGoogleAnalyticsCookieData(HttpServletRequest request, String cookieName) {
+	public static GACookieData getGoogleAnalyticsCookieData(HttpServletRequest request, String cookieName) {
 		return request != null ? getCookieData(cookieName, getCookieValue(request.getCookies(), cookieName)) : null;
 	}
 
-	public static GADataBase getGoogleAnalyticsCookieData(Cookie cookie) {
+	public static GACookieData getGoogleAnalyticsCookieData(Cookie cookie) {
 		return cookie != null ? getCookieData(cookie.getName(), cookie.getValue()) : null;
 	}
 

@@ -40,7 +40,7 @@ import java.util.Date;
  *
  * @author <a href="https://github.com/ebeeson">Erik Beeson</a>
  */
-public class GASessionData extends GADataBase {
+public class GASessionData extends GACookieData {
 	public static final String COOKIE_NAME = "__utmb";
 
 	private final Integer pageViews;

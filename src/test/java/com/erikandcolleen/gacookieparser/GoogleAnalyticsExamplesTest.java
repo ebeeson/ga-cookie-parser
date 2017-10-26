@@ -63,7 +63,7 @@ public class GoogleAnalyticsExamplesTest {
 	public void examples() {
 		for(String[] cookie : cookies) {
 			Reporter.log(String.format("%s: %s", cookie[0], cookie[1]));
-			Reporter.log(String.valueOf(GADataBase.getCookieData(cookie[0], cookie[1])));
+			Reporter.log(String.valueOf(GACookieData.getCookieData(cookie[0], cookie[1])));
 			Reporter.log("");
 			Reporter.log("");
 		}
